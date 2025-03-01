@@ -1,0 +1,71 @@
+﻿1.
+cd documents;
+md projeto_inicial;
+cd projeto_inicial;
+md html, css, js, assets;
+
+
+2.
+cd html;
+echo Bem-Vindo ao prejto incial. > index.html;
+
+
+3.
+cd ..;
+cd css;
+echo body{font-family: Arial, sans-serif; background-color:beige} > style.css;
+
+
+4.
+cd ..;
+cd assets;
+md img, fonts;
+
+
+
+
+5.
+cd ..;
+cd css;
+move style.css ..;
+cd ..;
+move style.css assets;
+cd assets;
+
+
+6.
+dir;
+
+
+7.
+cd ..;
+cd js;
+echo console.log("Script carregado!"); > script.js || echo console.log("Aplicação Iniciada!"); > app;js;
+
+
+8.
+cd ..; 
+cd html;
+copy index.html C:\Users\Aluno\Documents\projeto_inicial\assets;
+
+
+9.
+cd ..;
+cd js; 
+rename app.js main.js;
+
+
+10.
+cd ..; 
+tree /f;
+
+
+11.
+cd assets;
+del index.html;
+
+
+12. 
+cd ..;
+cd html;
+notepad index.html;

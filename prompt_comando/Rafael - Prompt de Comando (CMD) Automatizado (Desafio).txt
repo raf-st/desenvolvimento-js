@@ -1,0 +1,96 @@
+﻿@echo off
+
+
+:: Começar no diretório correto, que é o diretório de Documentos do usuário
+cd /d "C:\Users\Aluno\Documents"
+
+
+:: 1. Criar a pasta "projeto_inicial" se não existir
+if not exist "projeto_inicial" (
+    md projeto_inicial
+)
+
+
+cd projeto_inicial
+
+
+:: 2. Criar as subpastas html, css, js, assets se não existirem
+if not exist "html" (
+    md html
+)
+if not exist "css" (
+    md css
+)
+if not exist "js" (
+    md js
+)
+if not exist "assets" (
+    md assets
+)
+
+
+:: 3. Criar o arquivo index.html com a mensagem
+cd html
+echo Bem-Vindo ao projeto inicial. > index.html
+
+
+:: 4. Criar o arquivo style.css
+cd ..
+cd css
+echo body{font-family: Arial, sans-serif; background-color: beige;} > style.css
+
+
+:: 5. Criar os diretórios img e fonts dentro de assets
+cd ..
+cd assets
+if not exist "img" (
+    md img
+)
+if not exist "fonts" (
+    md fonts
+)
+
+
+:: 6. Mover o style.css para a pasta assets
+cd ..
+cd css
+move style.css ..\assets
+
+
+:: 7. Listar os arquivos e pastas na pasta atual (projeto_inicial)
+cd ..
+dir
+
+
+:: 8. Criar script.js e app.js dentro de js
+cd js
+echo console.log("Script carregado!") > script.js
+echo console.log("Aplicação Iniciada!") > app.js
+
+
+:: 9. Copiar index.html para a pasta assets
+cd ..
+cd html
+copy index.html ..\assets
+
+
+:: 10. Renomear app.js para main.js
+cd ..
+cd js
+rename app.js main.js
+
+
+:: 11. Exibir a estrutura de pastas e arquivos com tree
+cd ..
+tree /f
+
+
+:: 12. Apagar o arquivo index.html dentro da pasta assets
+cd assets
+del index.html
+
+
+:: 13. Abrir o arquivo index.html no Notepad
+cd ..
+cd html
+start notepad index.html

@@ -1,0 +1,11 @@
+﻿Funcionais:
+- Identificação/cadastro para cada obra e cada aluno;
+- Localização das obras dentro da biblioteca;
+- Sistema de reserva de obras;
+- Disponibilização de obras digitas na própria plataforma;
+- Sistema de busca para os usuários saberem se há a obra na biblioteca e se ela está disponível para a reserva;
+
+
+Não funcionais:
+- Muitas solicitações de cadastro e reserva de livro ao mesmo tempo;
+- Usabilidade para indivíduos que não conhecem muita tecnologia;
