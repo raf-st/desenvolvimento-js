@@ -23,10 +23,11 @@ git commit -m "Atualização de anotações.txt";
 git push;
 
 Desafio:
-md "prompt_comando";
-md "levantamento_requisitos";
-md "prototipo_figma";
-md "github";
+md "atv1-cmd";
+md "atv2-requisitos-biblioteca";
+md "atv3-requisitos-login";
+md "atv4-prototipo-figma";
+md "atv5-git-github"
 git add .;
 git commit -m "Adição de pastas com atividades anteriores"
 git push;
