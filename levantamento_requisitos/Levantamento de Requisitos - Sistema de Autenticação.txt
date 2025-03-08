@@ -1,0 +1,22 @@
+﻿Funcionais:
+ Login:
+* Devem ter campos fáceis dos usuários entenderem o que deve ser preenchido
+* Paleta de cores agradável
+*  Link para levar à página de cadastro caso o indivíduo ainda não possua um
+Cadastro:
+*  Confirmação de senha
+* Confirmação de cadastro no email
+* Direcionamento para a página de login após o cadastro
+* Impossibilidade do indivíduo acessar o sistema sem um cadastro para efetuar o login
+Recuperação de senha:
+* Link para a troca/recuperação de senha no email cadastrado
+* Direcionamento para a página de login após a troca
+Não Funcionais:
+* Responsividade, UI e UX
+* Segurança com os dados pessoais
+* Contato da empresa/suporte caso seja necessário ajuda ou o esclarecimento de alguma dúvida
+
+
+Regras de negócio:
+* Utilização de senhas fortes
+* Estar atento a mensagens de alerta de segurança

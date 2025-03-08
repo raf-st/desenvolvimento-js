@@ -1,0 +1,32 @@
+1. (Pasta criada)
+2. git init;
+3. git config --global user.email "rafael.tomasetti@gmail.com";
+git config --global user.name "Rafael Silva Tomasetti";
+4. echo "Neste repositório irão ser armazenadas todas as atividasdes feitas ao longo do curso" > README.md;
+echo "Javascript é uma linguagem de programação muito utilizada para a criação de páginas web interativas, criada em 1995 pelo programador Brenan Eich, é uma linguagem dinâmica e muito utilizada atualmente!" > anotacoes.txt;
+5. git add .;
+6. git commit -m "Primeiro commit";
+git remote add origin https://github.com/raf-st/desenvolvimento-js.git;
+git branch; (master)
+git branch -M main;
+git push -u origin main;
+7. echo "Ela pode ser usada tanto no front-end quando no back-end! Criando páginas interativas e processando dados." >> anotacoes.txt;
+git add .\anotacoes.txt;
+git commit -m "Informações adicionadas em anotacoes.js";
+git push;
+8. (Arquivo excluído) => 
+cd .\Desktop\;
+git clone https://github.com/raf-st/desenvolvimento-js.git;
+9. echo "Rafael Silva Tomasetti" >> anotacoes.txt;
+git add .\anotacoes.txt;
+git commit -m "Atualização de anotações.txt";
+git push;
+
+Desafio:
+md "prompt_comando";
+md "levantamento_requisitos";
+md "prototipo_figma";
+md "github";
+git add .;
+git commit -m "Adição de pastas com atividades anteriores"
+git push;
