@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de condicional</title>
+</head>
+<body>
+    <script>
+        // exercicio 2 
+        // saber se o numero é par/impar
+        var numero = 7;
+        console.log(numero % 2);
+        if (numero % 2 === 0){
+            consol.log("Par");
+        } else {
+            console.log("Ímpar");
+        }
+
+        // exercicio 3
+        // maior e menor numero
+        var numero1 = 10;
+        var numero2 = 20;
+        var numero3 = 30;
+        var maior = 0;
+        var menor = 0;
+        
+        if (numero1 > numero2 && numero1 > numero3){
+            maior = numero1
+        }
+        else if (numero2 > numero1 && numero2 > numero3){
+            maior = numero2
+        }
+        else if (numero3 > numero1 && numero3 > numero2){
+            maior = numero3
+        }
+        console.log("O maior número é: "+ maior)
+
+        if (numero1 < numero2 && numero1 < numero3){
+            menor = numero1
+        }
+        else if (numero2 < numero1 && numero2 < numero3){
+            menor = numero2
+        }
+        else if (numero3 < numero1 && numero3 < numero2){
+            menor = numero3
+        }
+        console.log("O menor número é: " + menor )
+
+        // outra forma de resolução (Mais otimizada)
+
+        maior = numero1
+        menor = numero1
+
+        if(numero2 > maior){
+            maior = numero2
+        }
+        if(numero3 > maior){
+            maior = numero3
+        }
+
+        if(numero2 < menor){
+            menor = numero2
+        }
+        if(numero3 < menor){
+            menor = numero3
+        }
+        console.log("O maior número é: "+ maior)
+        console.log("O menor número é: " + menor )
+
+        // exercicio 4
+        // Cauculadora
+        var operacao = prompt("Digite a operação:");
+        var numero1 = parseFloat(prompt("Digite um número:"));
+        var numero2 = parseFloat(prompt("Digite outro número:"));
+
+        switch (operacao) {
+            case "+":
+                valor = numero1 + numero2
+                alert("A soma é: "+valor)
+                break;
+            case "-":
+                valor = numero1 + numero2
+                alert("A subtração é: "+valor)
+                break;
+            case "*":
+                valor = numero1 * numero2
+                alert("A multiplicação é: "+valor)
+                break;
+            case "/":
+                valor = numero1 / numero2
+                alert("A divisão é: "+valor)
+                break;
+
+            default:
+                alert("Operação inválida")
+                break;
+        }
+    </script>
+</body>
+</html>
