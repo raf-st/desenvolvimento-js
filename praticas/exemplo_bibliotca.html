@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotca</title>
+</head>
+<body>
+    <h1>Escopo e bibliotecas</h1>
+    <script>
+
+        function exemploVar(){
+            var x = 10;
+            if (1 == 1){
+                var x = 20;
+                console.log(`Dentro do if: ${x}`);
+            }
+            console.log(`Fora do if: ${x}`)
+        }
+        exemploVar();
+
+// ===============================================
+
+        function exemploVar(){
+            let x = 10;
+            if (1 == 1){
+                let x = 20;
+                console.log(`Dentro do if: ${x}`);
+            }
+            console.log(`Fora do if: ${x}`)
+        }
+        exemploVar();
+
+        var nome = "Lucas";
+        var nome = "Rafael";
+        let idade = 15;
+        idade = 16;
+
+        const pi = 3.1415;
+
+        const pessoa = {"nome": "Maria"};
+        console.log(pessoa);
+        pessoa.nome = "Rafael";
+        console.log(pessoa);
+
+    </script>
+</body>
+</html>
