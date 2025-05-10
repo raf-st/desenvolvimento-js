@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exemplo de bibliotecas</title>
+</head>
+
+<body>
+    <h1>Exemplo Bibliotecas</h1>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+
+        var numero = 10.5;
+        console.log(`Valor original ${numero}`);
+        console.log(`Arredondamento para baixo ${Math.floor(numero)}`);
+        console.log(`Arredondamento para cima ${Math.ceil(numero)}`);
+        console.log(`Arredondamento para o mais próximo ${Math.round(numero)}`);
+        console.log("");
+        var array = [10, 20, 30, 40, 50];
+        console.log(`Valores: ${array}`);
+        console.log(`Maior valor: ${Math.max(...array)}`);
+        console.log(`Maior valor: ${Math.min(...array)}`);
+
+        console.log(`raiz sem biblioteca ${16 ** 0.5}`);
+        num = 16;
+        console.log(`Raiz com biblioteca ${Math.sqrt(num)}`);
+
+        // Fim biblioteca math
+
+        // Início biblioteca Date
+
+        console.log("");
+        var data = new Date();
+        console.log(`Data atual ${data}`);
+        console.log(`Dia ${data.getDate()}`);
+        console.log(`Mês ${data.getMonth()}`);
+        console.log(`Ano ${data.getFullYear()}`);
+        console.log(`Hora ${data.getHours()}`);
+        console.log(`Minutos ${data.getMinutes()}`);
+        console.log(`Segundos ${data.getSeconds()}`);
+        console.log(`Dia da semana ${data.getDay()}`);
+
+
+        // Biblioteca Jquery
+
+        $("h1").css("color","red");
+
+        $("h1").css({
+            "color": "red",
+            "font-family": "Arial",
+            "font-size": "100px",
+            "text-align": "text-center"
+        })
+
+    </script>
+
+
+</body>
+
+</html>
